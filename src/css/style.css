@@ -308,28 +308,50 @@ img {
   min-height: 70px;
 }
 
+/* line 34, ../projects/webstart/src/sass/blocks/_offer.sass */
+.offer__subtext {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 38, ../projects/webstart/src/sass/blocks/_offer.sass */
+.offer__description {
+  display: inline-block;
+  width: 225px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+/* line 45, ../projects/webstart/src/sass/blocks/_offer.sass */
+.offer__tel {
+  display: inline-block;
+  width: 195px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
 @media (max-width: 1200px) {
-  /* line 35, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 53, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer {
     background-size: cover;
   }
-  /* line 37, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 55, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 40, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 58, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer__button {
     font-size: 13px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 43, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 61, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer {
     background: #ffffff;
   }
-  /* line 45, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 63, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer-block {
     width: 100%;
     padding-right: 0;
