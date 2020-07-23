@@ -66,6 +66,7 @@ img {
 /* line 33, ../projects/webstart/src/sass/_interface.sass */
 .section-title {
   font-size: 24px;
+  text-align: center;
 }
 
 /* line 36, ../projects/webstart/src/sass/_interface.sass */
@@ -80,6 +81,11 @@ img {
   padding: 20px 26px;
   font-size: 15px;
   border-radius: 10px;
+}
+
+/* line 47, ../projects/webstart/src/sass/_interface.sass */
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
 }
 
 /* Импорт стилей шапки */
@@ -283,38 +289,39 @@ img {
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
-/* line 22, ../projects/webstart/src/sass/blocks/_offer.sass */
+/* line 23, ../projects/webstart/src/sass/blocks/_offer.sass */
 .offer__subtitle {
   max-width: 250px;
   margin-bottom: 30px;
 }
 
-/* line 25, ../projects/webstart/src/sass/blocks/_offer.sass */
+/* line 26, ../projects/webstart/src/sass/blocks/_offer.sass */
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
 }
 
-/* line 28, ../projects/webstart/src/sass/blocks/_offer.sass */
+/* line 29, ../projects/webstart/src/sass/blocks/_offer.sass */
 .offer__input:first-child {
   margin-right: 10px;
 }
 
-/* line 30, ../projects/webstart/src/sass/blocks/_offer.sass */
+/* line 31, ../projects/webstart/src/sass/blocks/_offer.sass */
 .offer__button {
   width: 100%;
   min-height: 70px;
 }
 
-/* line 34, ../projects/webstart/src/sass/blocks/_offer.sass */
+/* line 35, ../projects/webstart/src/sass/blocks/_offer.sass */
 .offer__subtext {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 38, ../projects/webstart/src/sass/blocks/_offer.sass */
+/* line 39, ../projects/webstart/src/sass/blocks/_offer.sass */
 .offer__description {
   display: inline-block;
   width: 225px;
@@ -322,7 +329,7 @@ img {
   font-size: 15px;
 }
 
-/* line 45, ../projects/webstart/src/sass/blocks/_offer.sass */
+/* line 46, ../projects/webstart/src/sass/blocks/_offer.sass */
 .offer__tel {
   display: inline-block;
   width: 195px;
@@ -331,31 +338,59 @@ img {
 }
 
 @media (max-width: 1200px) {
-  /* line 53, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 54, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer {
     background-size: cover;
   }
-  /* line 55, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 56, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
   }
-  /* line 58, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 59, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer__button {
     font-size: 13px;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 61, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 62, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer {
     background: #ffffff;
   }
-  /* line 63, ../projects/webstart/src/sass/blocks/_offer.sass */
+  /* line 64, ../projects/webstart/src/sass/blocks/_offer.sass */
   .offer-block {
     width: 100%;
     padding-right: 0;
   }
+}
+
+/* Стили для блока портфолио */
+/* line 1, ../projects/webstart/src/sass/blocks/_portfolio.sass */
+.portfolio {
+  background: #f5f5f5 url("../img/portfolio/portfolio-pattern.png") repeat-y center left;
+  background-size: 50%;
+}
+
+/* line 4, ../projects/webstart/src/sass/blocks/_portfolio.sass */
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+/* line 8, ../projects/webstart/src/sass/blocks/_portfolio.sass */
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 15, ../projects/webstart/src/sass/blocks/_portfolio.sass */
+.slider__image {
+  margin: auto;
 }
 
 /* Стили модального окна */
