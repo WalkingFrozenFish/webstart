@@ -67,15 +67,16 @@ img {
 .section-title {
   font-size: 24px;
   text-align: center;
+  max-width: 500px;
 }
 
-/* line 36, ../projects/webstart/src/sass/_interface.sass */
+/* line 37, ../projects/webstart/src/sass/_interface.sass */
 .section-subtitle {
   display: block;
   font-size: 16px;
 }
 
-/* line 39, ../projects/webstart/src/sass/_interface.sass */
+/* line 40, ../projects/webstart/src/sass/_interface.sass */
 .input {
   border: 1px solid #dddddd;
   padding: 20px 26px;
@@ -83,7 +84,7 @@ img {
   border-radius: 10px;
 }
 
-/* line 47, ../projects/webstart/src/sass/_interface.sass */
+/* line 48, ../projects/webstart/src/sass/_interface.sass */
 .arrows__left:hover, .arrows__right:hover {
   cursor: pointer;
 }
@@ -374,12 +375,11 @@ img {
 
 /* line 4, ../projects/webstart/src/sass/blocks/_portfolio.sass */
 .portfolio__title {
-  max-width: 500px;
   margin: auto;
   margin-bottom: 100px;
 }
 
-/* line 8, ../projects/webstart/src/sass/blocks/_portfolio.sass */
+/* line 7, ../projects/webstart/src/sass/blocks/_portfolio.sass */
 .portfolio__arrows {
   max-width: 120px;
   margin: auto;
@@ -388,9 +388,108 @@ img {
   justify-content: space-between;
 }
 
-/* line 15, ../projects/webstart/src/sass/blocks/_portfolio.sass */
+/* line 14, ../projects/webstart/src/sass/blocks/_portfolio.sass */
 .slider__image {
   margin: auto;
+}
+
+/* Стили для блока с ценами */
+/* line 2, ../projects/webstart/src/sass/blocks/_price.sass */
+.price__title {
+  margin: auto;
+  margin-bottom: 58px;
+}
+
+/* line 5, ../projects/webstart/src/sass/blocks/_price.sass */
+.price__subtitle {
+  margin-bottom: 59px;
+  text-align: center;
+}
+
+/* line 8, ../projects/webstart/src/sass/blocks/_price.sass */
+.price__card {
+  margin-bottom: 30px;
+}
+
+/* line 10, ../projects/webstart/src/sass/blocks/_price.sass */
+.card {
+  text-align: center;
+  border: 1px solid #e8e8e8;
+  transition: 0.2s;
+}
+
+/* line 14, ../projects/webstart/src/sass/blocks/_price.sass */
+.card:hover {
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* line 16, ../projects/webstart/src/sass/blocks/_price.sass */
+.card:hover .card__image:before {
+  opacity: 1;
+}
+
+/* line 19, ../projects/webstart/src/sass/blocks/_price.sass */
+.card__text {
+  padding: 40px;
+}
+
+/* line 21, ../projects/webstart/src/sass/blocks/_price.sass */
+.card__title {
+  margin-top: 0;
+}
+
+/* line 23, ../projects/webstart/src/sass/blocks/_price.sass */
+.card__image {
+  position: relative;
+}
+
+/* line 25, ../projects/webstart/src/sass/blocks/_price.sass */
+.card__image::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  transition: 0.2s;
+}
+
+/* line 35, ../projects/webstart/src/sass/blocks/_price.sass */
+.card__link {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-size: 16px;
+  position: relative;
+}
+
+/* line 42, ../projects/webstart/src/sass/blocks/_price.sass */
+.card__link:hover::after {
+  height: 12px;
+  display: block;
+}
+
+/* line 45, ../projects/webstart/src/sass/blocks/_price.sass */
+.card__link:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  bottom: -4px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #ffd000;
+  transition: 0.2s;
+}
+
+/* line 56, ../projects/webstart/src/sass/blocks/_price.sass */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 /* Стили модального окна */
