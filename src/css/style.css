@@ -94,6 +94,11 @@ img {
   cursor: pointer;
 }
 
+/* line 53, ../projects/webstart/src/sass/_interface.sass */
+.error {
+  border: 1px solid yellow;
+}
+
 /* Импорт стилей шапки */
 /* line 1, ../projects/webstart/src/sass/blocks/_navbar.sass */
 .navbar {

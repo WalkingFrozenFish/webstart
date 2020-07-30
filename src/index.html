@@ -268,9 +268,9 @@
                     <div class="form brif__form">
                         <h3 class="form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h3>
                         <span class="form__subtitle">Для этого заполните форму ниже</span>
-                        <form action="#">
-                            <input type="text" class="input brif__input" placeholder="Ваше имя">
-                            <input type="tel" class="input brif__input" placeholder="Ваш телефон">
+                        <form action="#" id="brif-form">
+                            <input type="text" name="username" required class="input brif__input" placeholder="Ваше имя">
+                            <input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш телефон">
                             <button class="button brif__button">Узнать стоимость</button>
                             <span class="form__description">Мы перезвоним Вам в течении 60 секунд</span>
                         </form>
@@ -301,11 +301,38 @@
     <script src="js/modal.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     
     <!-- <script>new WOW().init();</script> -->
     <script>
         new WOW().init();
+
         $(document).ready(function() {
+            /*валидация формы*/
+            $('#brif-form').validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2
+                    },
+                    phone: {
+                        required: true,
+                    }
+                },
+                messages: {
+                    username: {
+                        required: "Укажите имя",
+                        minlength: jQuery.validator.format("Осталось символов: {0}")
+                    },
+                    phone: {
+                        required: "Нам нужен ваш телефон"
+                    }
+                }
+            });
+            /*валидация скрипта для маски телефона*/
+            $('.phone').mask('+7 (999) 999-99-99');
+            /*валидация скрипта слайдера*/
             $('.slider').slick({
                 slidesToShow: 3,
                 slidesToScroll: 1,
