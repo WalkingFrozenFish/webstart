@@ -673,6 +673,62 @@ img {
   }
 }
 
+/* Стили для футера */
+/* line 1, ../projects/webstart/src/sass/blocks/_footer.sass */
+.footer {
+  position: relative;
+}
+
+/* line 3, ../projects/webstart/src/sass/blocks/_footer.sass */
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+/* line 8, ../projects/webstart/src/sass/blocks/_footer.sass */
+.contacts {
+  flex-basis: 50%;
+  padding-top: 100px;
+  padding-left: 200px;
+}
+
+/* line 12, ../projects/webstart/src/sass/blocks/_footer.sass */
+.contacts__title {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+/* line 16, ../projects/webstart/src/sass/blocks/_footer.sass */
+.contacts-block {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 19, ../projects/webstart/src/sass/blocks/_footer.sass */
+.contacts-list {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 22, ../projects/webstart/src/sass/blocks/_footer.sass */
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+/* line 28, ../projects/webstart/src/sass/blocks/_footer.sass */
+.contacts-list__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 39px;
+}
+
 /* Стили модального окна */
 /* line 1, ../projects/webstart/src/sass/blocks/_modal.sass */
 .modal {
